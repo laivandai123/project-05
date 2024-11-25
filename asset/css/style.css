@@ -8,6 +8,16 @@ body {
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
 }
+:root {
+    --primary-color: #7264d6;
+    --text-heading: #212832;
+    --text-desc: #696d76;
+}
+/* common */
+a {
+    text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -23,7 +33,218 @@ textarea {
     font-size: inherit;
     font-family: inherit;
 }
-/* common */
-a {
-    text-decoration: none;
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.btn {
+    min-width: 149px;
+    --height: 58px;
+    height: var(--height);
+    border-radius: 8px;
+    background: var(--text-heading);
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: var(--height);
+    padding: 15px 30px;
+}
+.section-desc {
+    position: relative;
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding-left: 32px;
+}
+.section-desc::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+.section-heading {
+    margin-top: 12px;
+    color: var(--text-heading);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+/* ==========header============= */
+.header {
+    padding: 50px 0;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+.navbar__list {
+    display: flex;
+    margin-left: 47px;
+}
+.navbar__item,
+.btn-login {
+    color: var(--text-desc);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding: 4px 23px;
+}
+.navbar__item:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: var(--text-heading);
+}
+.navbar__item span:hover {
+    border-bottom: 2px solid #9c93e2;
+}
+.btn-login {
+    margin-right: 5px;
+    color: var(--text-heading);
+}
+.btn-action {
+    margin-left: auto;
+}
+.btn-signup {
+    min-width: 113px;
+    height: 52px;
+    padding: 12px 28px;
+    border-radius: 6px;
+}
+.btn-signup:hover {
+    opacity: 0.9;
+}
+/* =====header-row===== */
+.header-row {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+    margin-top: 88px;
+}
+.header-text {
+    width: 46%;
+}
+.section-heading span {
+    color: var(--primary-color);
+}
+.section-more {
+    margin-top: 20px;
+    color: var(--text-desc);
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+.form-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+.form-input {
+    padding: 23px 0px 23px 23px;
+    border: none;
+    outline: none;
+    color: var(--text-desc);
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+}
+.form-btn:hover {
+    opacity: 0.9;
+}
+.form-note {
+    margin-top: 28px;
+    color: var(--text-desc);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.header-right__img {
+    position: relative;
+}
+.header-groupone {
+    position: absolute;
+    top: 103px;
+    left: -120px;
+}
+.header-grouptwo {
+    position: absolute;
+    right: -74px;
+    bottom: 63px;
+}
+.header-groupthree {
+    position: absolute;
+    top: 127px;
+    right: -176px;
+}
+/* =============main============ */
+.work-inner {
+    display: flex;
+    align-items: center;
+    column-gap: 237px;
+    padding: 80px 0;
+    margin-top: 30px;
+}
+.work-image {
+    width: 570px;
+    position: relative;
+}
+.work-image::after {
+    content: url(../img/work-after.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.work-image__user {
+    width: 456px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    left: 5px;
+}
+.work-image__card {
+    position: absolute;
+    top: 78px;
+    right: 107px;
+    z-index: 1;
+    margin-left: 2px;
+}
+.work-image__congratulations {
+    position: absolute;
+    right: -106px;
+    bottom: 39px;
+    z-index: 1;
+}
+.work-right {
+    width: 40%;
+}
+.work-title {
+    margin-top: 40px;
+}
+.work-list {
+    margin-top: 30px;
+    color: var(--text-heading);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+.work-item {
+    margin-top: 16px;
+    color: var(--text-desc);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
