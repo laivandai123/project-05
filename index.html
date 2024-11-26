@@ -98,6 +98,11 @@
             content="./asset/favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
+        <!-- link animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="header">
@@ -112,7 +117,7 @@
                     <!-- navbar -->
                     <ul class="navbar__list">
                         <li>
-                            <a href="#!" class="navbar__item"
+                            <a href="#" class="navbar__item"
                                 ><span>Home</span></a
                             >
                         </li>
@@ -122,12 +127,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="navbar__item"
+                            <a href="#feature" class="navbar__item"
                                 ><span>Features</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="navbar__item"
+                            <a href="#blog" class="navbar__item"
                                 ><span>Blog</span></a
                             >
                         </li>
@@ -145,7 +150,10 @@
                             <p class="section-desc desc-text">
                                 Digital Smart Wallet
                             </p>
-                            <h1 class="section-heading heading-text">
+                            <h1
+                                class="section-heading heading-text"
+                                data-aos="fade-right"
+                            >
                                 Digital <span>Payment</span> For Everyone.
                             </h1>
                             <p class="section-more">
@@ -178,21 +186,25 @@
                                 src="./asset/img/Mobile Screen.png"
                                 alt=""
                                 class="mobile-screen"
+                                data-aos="zoom-in-up"
                             />
                             <img
                                 src="./asset/img/group-one.png"
                                 alt=""
                                 class="header-groupone"
+                                data-aos="fade-up-right"
                             />
                             <img
                                 src="./asset/img/Group-two.png"
                                 alt=""
                                 class="header-grouptwo"
+                                data-aos="fade-left"
                             />
                             <img
                                 src="./asset/img/Group-three.png"
                                 alt=""
                                 class="header-groupthree"
+                                data-aos="fade-left"
                             />
                         </figure>
                     </div>
@@ -209,16 +221,19 @@
                             src="./asset/img/work-user.png"
                             alt=""
                             class="work-image__user"
+                            data-aos="zoom-in-up"
                         />
                         <img
                             src="./asset/img/work-card-1.png"
                             alt=""
                             class="work-image__card"
+                            data-aos="fade-left"
                         />
                         <img
                             src="./asset/img/work-card-2.png"
                             alt=""
                             class="work-image__congratulations"
+                            data-aos="fade-left"
                         />
                     </div>
                     <!-- work-right -->
@@ -257,7 +272,7 @@
                     </section>
                 </div>
                 <!-- feature 1 -->
-                <feature class="feature-inner">
+                <feature class="feature-inner" id="feature">
                     <!-- feature-left -->
                     <div class="feature-text">
                         <p class="feature-desc section-desc">
@@ -280,7 +295,7 @@
                     </div>
                     <!-- feature-right -->
                     <div class="feature-right">
-                        <div class="feature-card">
+                        <div class="feature-card" data-aos="flip-left">
                             <div class="feature-card__top">
                                 <div class="feature-card__top--user">
                                     Main Balance
@@ -308,7 +323,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-send">
+                        <div class="feature-send" data-aos="fade-left">
                             <img
                                 src="./asset/img/send-01.png"
                                 alt=""
@@ -328,7 +343,7 @@
                                 <span class="feature-send__time">Sep 23</span>
                             </div>
                         </div>
-                        <div class="feature-stamp">
+                        <div class="feature-stamp" data-aos="fade-left">
                             <img
                                 src="./asset/img/temp-01.png"
                                 alt=""
@@ -346,8 +361,9 @@
                             src="./asset/img/feature-user.png"
                             alt=""
                             class="feature-image__img"
+                            data-aos="zoom-in-up"
                         />
-                        <div class="feature-method">
+                        <div class="feature-method" data-aos="zoom-in">
                             <h2 class="feature-method__title">
                                 Choose payment method:
                             </h2>
@@ -388,6 +404,7 @@
                             src="./asset/img/feature-price.png"
                             alt=""
                             class="feature-pricing"
+                            data-aos="fade-left"
                         />
                     </figure>
                     <!-- feature-right -->
@@ -474,7 +491,7 @@
                     </span>
                 </section>
                 <!-- blog -->
-                <section class="blog-inner">
+                <section class="blog-inner" id="blog">
                     <!-- top -->
                     <section class="blog-text">
                         <div class="blog-text__top">
@@ -629,7 +646,7 @@
                     <ul class="footer-list">
                         Sitemap
                         <li>
-                            <a href="#!" class="footer-item">Home</a>
+                            <a href="#" class="footer-item">Home</a>
                         </li>
                         <li>
                             <a href="#!" class="footer-item">Abouts</a>
@@ -685,5 +702,9 @@
             </div>
             <p class="footer-bot">© 2020 Ligft Media All rights reserved.</p>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
