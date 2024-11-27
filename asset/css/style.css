@@ -38,6 +38,10 @@ textarea {
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
+button {
+    border: none;
+    cursor: pointer;
+}
 .btn {
     min-width: 149px;
     --height: 58px;
@@ -167,6 +171,7 @@ textarea {
     color: var(--text-desc);
     font-size: 1.6rem;
     line-height: 1.75;
+    width: calc(100% - 170px);
 }
 .form-btn {
     display: flex;
@@ -806,7 +811,7 @@ textarea {
 .email {
     width: 270px;
     padding: 12px;
-    color: #8e919a;
+    color: #2c2c2c;
     font-size: 1.6rem;
     line-height: 1.75;
     border-radius: 6px;

@@ -110,7 +110,7 @@
                 <div class="header-inner">
                     <!-- logo -->
                     <img
-                        src="./asset/img/Logo.png"
+                        src="./asset/img/Logo.svg"
                         alt="CeloBank"
                         class="logo"
                     />
@@ -166,12 +166,14 @@
                                     class="form-input"
                                     type="email"
                                     name=""
-                                    id=""
+                                    id="form-ctn"
                                     placeholder="Your email address"
+                                    required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 />
-                                <a href="#!" class="btn form-btn"
-                                    >Get Started</a
-                                >
+                                <button href="#!" class="btn form-btn">
+                                    Get Started
+                                </button>
                             </form>
                             <p class="form-note">
                                 *We’ll respect the inbox and never share your
@@ -183,25 +185,25 @@
                     <div class="header-right">
                         <figure class="header-right__img">
                             <img
-                                src="./asset/img/Mobile Screen.png"
+                                src="./asset/img/Mobile Screen.svg"
                                 alt=""
                                 class="mobile-screen"
                                 data-aos="zoom-in-up"
                             />
                             <img
-                                src="./asset/img/group-one.png"
+                                src="./asset/img/Group 5306.svg"
                                 alt=""
                                 class="header-groupone"
                                 data-aos="fade-up-right"
                             />
                             <img
-                                src="./asset/img/Group-two.png"
+                                src="./asset/img/Group 5303.svg"
                                 alt=""
                                 class="header-grouptwo"
                                 data-aos="fade-left"
                             />
                             <img
-                                src="./asset/img/Group-three.png"
+                                src="./asset/img/Group 17423.svg"
                                 alt=""
                                 class="header-groupthree"
                                 data-aos="fade-left"
@@ -224,13 +226,13 @@
                             data-aos="zoom-in-up"
                         />
                         <img
-                            src="./asset/img/work-card-1.png"
+                            src="./asset/img/Card.svg"
                             alt=""
                             class="work-image__card"
                             data-aos="fade-left"
                         />
                         <img
-                            src="./asset/img/work-card-2.png"
+                            src="./asset/img/Card2.svg"
                             alt=""
                             class="work-image__congratulations"
                             data-aos="fade-left"
@@ -401,7 +403,7 @@
                             </div>
                         </div>
                         <img
-                            src="./asset/img/feature-price.png"
+                            src="./asset/img/Group 2700.svg"
                             alt=""
                             class="feature-pricing"
                             data-aos="fade-left"
@@ -685,19 +687,25 @@
                         <p class="footer-list footer-new">News letter</p>
                         <div class="footer-btn">
                             <input
-                                type="text"
+                                type="email"
                                 class="email"
                                 placeholder="Email address..."
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
-                            <a href="#!" class="footer-subcribe btn"
-                                >Subscribe</a
-                            >
+                            <button href="" class="footer-subcribe btn">
+                                Subscribe
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="footer-contact">
-                    <a href="#!" class="footer-email">email@gmail.com</a>
-                    <a href="#!" class="footer-tel">(123) 456-7890</a>
+                    <a href="mailto:laivandai012@gmail.com" class="footer-email"
+                        >email@gmail.com</a
+                    >
+                    <a href="tel:+84988364015" class="footer-tel"
+                        >(123) 456-7890</a
+                    >
                 </div>
             </div>
             <p class="footer-bot">© 2020 Ligft Media All rights reserved.</p>
